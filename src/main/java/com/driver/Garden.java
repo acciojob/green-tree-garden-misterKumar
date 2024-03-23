@@ -8,10 +8,15 @@ public class Garden {
 
 	    public Garden() {
 	       // your code goes here
+			trees=new ArrayList<>();
 	    }
 
 	    public void plantTree(Tree tree) throws InvalidTreeException {
 	        // your code goes here
+			if (tree == null || tree.getName() == null || tree.getName().isEmpty()) {
+				throw new InvalidTreeException("Invalid tree");
+			}
+			trees.add(tree);
 	    }
 
 	    public List<Tree> getTrees() {

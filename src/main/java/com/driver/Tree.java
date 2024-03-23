@@ -5,6 +5,7 @@ public class Tree {
 
 	    public Tree(String name) {
 	        // your code goes here
+			this.name=name;
 	    }
 
 	    public String getName() {
